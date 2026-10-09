@@ -1,0 +1,44 @@
+.app-button {
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.app-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.app-button--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.app-button--primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.app-button--secondary {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.app-button--secondary:hover:not(:disabled) {
+  background-color: var(--color-bg);
+}
+
+.app-button--danger {
+  background-color: var(--color-error-text);
+  color: #ffffff;
+}
+
+.app-button--danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+}

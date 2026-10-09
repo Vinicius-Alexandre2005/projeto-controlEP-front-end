@@ -1,0 +1,123 @@
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 24px 16px;
+}
+
+.sidebar__brand {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  margin-bottom: 28px;
+}
+
+.sidebar__brand-mark {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.sidebar__brand-accent {
+  color: var(--color-primary);
+}
+
+.sidebar__brand-tagline {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.sidebar__link:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+.sidebar__link--active {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.sidebar__link-icon {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar__footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar__user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  border: none;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar__user:hover {
+  background-color: var(--color-bg);
+}
+
+.sidebar__user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.sidebar__user-email {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.sidebar__signout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 6px 8px;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+.sidebar__signout:hover {
+  background-color: var(--color-bg);
+  color: var(--color-error-text);
+}
